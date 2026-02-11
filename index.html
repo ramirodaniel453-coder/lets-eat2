@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <!-- CRITICAL: Responsive viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
     <title>LETS EAT - Local Food Marketplace</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!-- Notification Container -->
@@ -318,7 +319,7 @@
                 </div>
             </div>
             
-            <!-- Map Container -->
+            <!-- Map Container - FIXED: Added explicit wrapper and styles -->
             <div class="map-container">
                 <div id="map"></div>
                 
@@ -614,7 +615,7 @@
                     </div>
                 </div>
                 
-                <!-- Delivery History (Completed Deliveries) -->
+                <!-- Delivery History -->
                 <div class="dashboard-section">
                     <div class="section-header">
                         <div class="section-title">
@@ -776,8 +777,7 @@
         </div>
     </div>
 
-    <script src="app.js"></script>
+    <!-- Single JavaScript file - ALL original JavaScript -->
+    <script src="js/app.js"></script>
 </body>
-
 </html>
-
